@@ -1,0 +1,55 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.4 released by Alexandros Stamatakis on October 02 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 212749 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 65.73%
+
+RAxML Computation of pairwise distances
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 212749
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -T 8 -f x -p 12345 -s ulmus2018b_strict.phy -n ulmus2018b_strict.dist -m GTRGAMMA 
+
+
+
+Log Likelihood Score after parameter optimization: -2435353.542914
+
+
+Computing pairwise ML-distances ...
+
+Time for pair-wise ML distance computation of 5460 distances: 26.837757 seconds
+
+Distances written to file: /home/andrew/Dropbox/ULMUS-2014/ANALYSES/DATA.TREES/raxml.2019-04-04/strictClust/RAxML_distances.ulmus2018b_strict.dist

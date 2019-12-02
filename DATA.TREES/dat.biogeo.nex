@@ -1,0 +1,36 @@
+#NEXUS
+
+Begin data;
+Dimensions ntax=27 nchar=2;
+Format datatype=Standard missing=? gap=- labels="01";
+Matrix
+                  [AE]
+    laevis	       01
+    elongata	     01
+    thomasii	     10
+    serotina	     10
+    alata	         10
+    mexicana	     10
+    crassifolia	   10
+    glabra	       01
+    wallichiana	   01
+    laciniata	     01
+    uyematsui	     01
+    rubra	         10
+    pumila	       01
+    minor	         01
+    castaneifolia	 01
+    davidiana	     01
+    changii	       01
+    szechuanica	   01
+    prunifolia	   01
+    chenmoui	     01
+    microcarpa	   01
+    parvifolia	   01
+    lamellosa	     01
+    macrocarpa	   01
+    villosa	       01
+    americana4x	   10
+    americana2x	   10
+    ;
+End;
