@@ -1,8 +1,14 @@
 library(RADami)
-source('https://raw.githubusercontent.com/andrew-hipp/RADami/master/R/read.pyRAD.R')
+### R1: note that you should be using RADami >= 1.1-3, installed from github:
+###   - see README at https://github.com/andrew-hipp/RADami
+### source('https://raw.githubusercontent.com/andrew-hipp/RADami/master/R/read.pyRAD.R')
 
 rad.thresh <- 4
-outfileName <- '../DATA.TREES/rad.singletons.m4.phy'
+### outfileName <- '../DATA.TREES/rad.singletons.m4.phy'
+
+### R1: switching all output to ../OUT
+outfileName <- '../OUT/rad.singletons.m4.phy'
+
 rad.single.tips <- c(
   tr.dat$fastq_label[match(tr.pruned$tip.label, tr.dat$ordinationSp)],
   'ZELSER-1', 'HEMDAV-1'

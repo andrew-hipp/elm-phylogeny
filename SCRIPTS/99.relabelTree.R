@@ -25,6 +25,6 @@ relabel.tree <- function(tr = tr.ulm,
       } else tr$tip.label <- dat[tr$tip.label, label.columns]
     write.csv(cbind(orig = tr.origTips,
                     new = tr$tip.label),
-              'tree.labels.csv')
+              '../OUT/tree.labels.csv')
 		return(tr)
 		}

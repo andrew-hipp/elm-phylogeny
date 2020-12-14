@@ -50,25 +50,30 @@ for(i in 1:length(nodes.subg)) {
                             )
 } # close i
 
-pp$coordinates$limits <- list(x = c(-4, 84), y = NULL)
+pp$coordinates$limits <- list(x = c(-4, 70), y = NULL)
 
 sc = state_colors
 names(sc) <- unlist(state_labels)
 
-# print(pp)
-ggsave(file = 'PDFs/FigXX.prettyPlot.pdf', plot = pp, width = 7, height = 8.5)
-
-## make a legend
-sc.df <- stateCols
-sc.df$x <- 1:dim(sc.df)[1]
-sc.df$y <- 0
-sc.df$Range <- factor(row.names(sc.df), levels = row.names(sc.df))
-pp.leg <- ggplot(sc.df, aes(x = x, y = y, color = Range))
-pp.leg <- pp.leg + geom_point()
-pp.leg <- pp.leg + scale_color_manual(name = "Geographic ranges",
+pp <- pp + scale_color_manual(name = "Geographic ranges",
                               values = sc
                               #, breaks = names(sc)
                             )
-# pp.leg = pp.leg + guides(colour = guide_legend(ncol=2))
-# pp.leg = pp.leg + theme(legend.background = element_rect(color='white'))
-ggsave(file = 'PDFs/FigXX.prettyPlot.legend.pdf', plot = pp.leg, width = 7, height = 8.5)
+
+# print(pp)
+ggsave(file = '../OUT/FigXX.prettyPlot.pdf', plot = pp, width = 7, height = 8.5)
+
+## make a legend
+# sc.df <- stateCols
+# sc.df$x <- 1:dim(sc.df)[1]
+# sc.df$y <- 0
+# sc.df$Range <- factor(row.names(sc.df), levels = row.names(sc.df))
+# pp.leg <- ggplot(sc.df, aes(x = x, y = y, color = Range))
+# pp.leg <- pp.leg + geom_point()
+# pp.leg <- pp.leg + scale_color_manual(name = "Geographic ranges",
+#                               values = sc
+#                               #, breaks = names(sc)
+#                             )
+# # pp.leg = pp.leg + guides(colour = guide_legend(ncol=2))
+# # pp.leg = pp.leg + theme(legend.background = element_rect(color='white'))
+# ggsave(file = '../OUT/FigXX.prettyPlot.legend.pdf', plot = pp.leg, width = 7, height = 8.5)

@@ -1,4 +1,4 @@
-makes_states <- function(label_fn, color_fn, fp="./") {
+make_states <- function(label_fn, color_fn, fp="./") {
 
     # generate colors for ranges
     range_color_list = read.csv(color_fn, header=T, sep=",", colClasses="character", as.is = T)
@@ -28,7 +28,7 @@ makes_states <- function(label_fn, color_fn, fp="./") {
         st_colors[j] = range_colors[j]
     }
     st_colors[ length(st_colors)+1 ] = "lightgray"
-    st_lbl[["..."]] = "..."
-
+    # st_lbl[["..."]] = "..."
+    st_lbl[["misc."]] = "misc."
     return( list(state_labels=st_lbl, state_colors=st_colors) )
 }
