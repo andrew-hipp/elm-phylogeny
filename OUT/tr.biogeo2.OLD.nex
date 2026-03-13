@@ -1,0 +1,38 @@
+#NEXUS
+[R-package APE, Fri Nov 20 09:27:37 2020]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 27;
+	TAXLABELS
+		americana2x
+		laevis
+		elongata
+		thomasii
+		serotina
+		alata
+		mexicana
+		crassifolia
+		glabra
+		wallichiana
+		laciniata
+		uyematsui
+		rubra
+		pumila
+		minor
+		castaneifolia
+		davidiana
+		changii
+		szechuanica
+		prunifolia
+		chenmoui
+		microcarpa
+		parvifolia
+		lamellosa
+		macrocarpa
+		villosa
+		americana4x
+	;
+END;
+BEGIN TREES;
+	TREE * UNTITLED = [&R] (((((((((microcarpa:0.6367579633,chenmoui:0.6367579633):0.6368869653,prunifolia:1.273644929):1.275945447,((szechuanica:0.8494703977,changii:0.8494703977):0.8501977849,(castaneifolia:0.8497104955,davidiana:0.8497104955):0.8499576871):0.8499221931):0.8501839829,minor:3.399774359):3.39986473,pumila:6.799639089):6.800377228,((lamellosa:3.399768672,macrocarpa:3.399768672):3.399341259,parvifolia:6.799109931):6.800906386):6.800566684,(((wallichiana:3.399801373,(laciniata:1.699912071,uyematsui:1.699912071):1.699889302):3.399724956,rubra:6.799526329):3.400055039,glabra:10.19958137):10.20100163):10.19748341,villosa:30.59806641):10.20181501,(((americana4x:10.19978615,americana2x:10.19978615):10.20016103,laevis:20.39994718):10.19969724,(((thomasii:5.099658187,(serotina:2.549645028,alata:2.549645028):2.550013159):5.099861313,elongata:10.1995195):10.20067773,(crassifolia:10.19862928,mexicana:10.19862928):10.20156795):10.19944719):10.200237);
+END;
